@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
-    <section class="amount-display">
-        <div class="deposite amount-box ">
-            <div>
-                <p id="deposite-show" class="amount-text">00</p>
-                <h3>Deposite</h3>
+    <section class="bg-primary">
+        <p class="bbi-bank">BBI Bank</p>
+    </section>
+    <section class="main-section">
+        <div class="row amount-display justify-content-center">
+            <div class=" col-11 col-md-3 deposite amount-box ">
+                <div>
+                    <p id="deposite-show" class="amount-text">00</p>
+                    <h3>Deposite</h3>
+                </div>
+            </div>
+            <div class=" col-11 col-md-3 widrow amount-box ">
+                <div>
+                    <p id="widrow-show" class="amount-text">00</p>
+                    <h3>Widrow</h3>
+                </div>
+            </div>
+            <div class=" col-11 col-md-3 total amount-box ">
+                <div>
+                    <p id="total-show" class="amount-text">00</p>
+                    <h3>Total Balance</h3>
+                </div>
             </div>
         </div>
-        <div class="widrow amount-box ">
-            <div>
-                <p id="widrow-show" class="amount-text">00</p>
-                <h3>Widrow</h3>
+    
+        <div class="row bank mt-5 justify-content-center">
+            <div class="col-11 col-md-4 bank-deposite bank-box">
+                <div class="deposite-amount-box">
+                    <input id="deposite-input" class="input-box" type="number"><br>
+                    <button onclick= "Deposite()" class="btn text-white fw-bold fs-4 bg-primary mt-3 px-4" >Deposite</button>
+                </div>
+            </div>
+            <div class="col-11 col-md-4 bank-widrow bank-box">
+                <div class="widrow-amount-box ">
+                    <input id="widrow-input" class="input-box" type="number"><br>
+                    <button onclick="Widrow()" class="btn text-white fw-bold fs-4 bg-primary mt-3 px-4" >Widrow</button>
+                </div>
             </div>
         </div>
-        <div class="total amount-box ">
-            <div>
-                <p id="total-show" class="amount-text">00</p>
-                <h3>Total Balance</h3>
-            </div>
+    </section>
+    <section>
+        <img src="images/mony.jpg" class="img-fluid" alt="">
+        <div class="pt-2 bg-secondary d-flex justify-content-around text-white ">
+            <p>BBL Bank </p>
+            <p>www.bblbank.com</p>
         </div>
     </section>
 
-    <section class="bank">
-        <div class="bank-deposite bank-box">
-            <div class="deposite-amount-box">
-                <input id="deposite-input" class="input-box" type="number"><br>
-                <button onclick= "Deposite()" class="btn" >Deposite</button>
-            </div>
-        </div>
-        <div class="bank-widrow bank-box">
-            <div class="widrow-amount-box">
-                <input id="widrow-input" class="input-box" type="number"><br>
-                <button onclick="Widrow()" class="btn widrow-btn" >Widrow</button>
-            </div>
-        </div>
-    </section>
+
     <script src="app.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

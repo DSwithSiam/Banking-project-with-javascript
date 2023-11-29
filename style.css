@@ -38,20 +38,21 @@
     margin-top: 100px;
 }
 .bank-box{
-    height: 150px;
+    height: 200px;
     width: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #fcfcfc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #d8cccc;
     box-shadow: 2px 2px 4px rgb(22, 21, 21);
 }
-.btn{
+.btnn{
     padding: 10px;
-    height: 40px;
+    height: 30px;
     width: 120px;
     font-size: 20px;
     font-weight: bold;
@@ -65,9 +66,27 @@
     
 }
 .input-box{
-    padding: 10px;
-    background-color: rgb(221, 215, 208);
+    padding: 8px;
+    border: 2px solid rgb(100, 149, 184);
+    width: 260px;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
 }
 .widrow-btn{
-    background-color: blue;
+    border: 2px solid rgb(9, 9, 189) !important;
+    border-radius: 3px;
+    background-color: rgb(81, 81, 95);
+}
+.bbi-bank{
+    font-size: 90px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.main-section{
+    background-image: url(../images/bank.avif);
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
